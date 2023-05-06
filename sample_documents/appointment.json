@@ -1,0 +1,12 @@
+{
+  "_id": "appointment123",
+  "patient_id": "patient123",
+  "provider_id": "provider456",
+  "date_scheduled": ISODate("2023-05-12T10:00:00Z"),
+  "date_of_visit": ISODate("2023-05-12T10:30:00Z"),
+  "telehealth_device": "smartphone",
+  "confirmed_phone": "555-123-4567",
+  "confirmed_email": "john.smith@example.com",
+  "disposition": "completed",
+  "billing_disposition": "billed"
+}

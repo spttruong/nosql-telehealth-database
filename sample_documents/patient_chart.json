@@ -1,0 +1,10 @@
+{
+  "_id": "patient123",
+  "height_in": 68,
+  "weight": 150,
+  "blood_pressure": "120/80",
+  "blood_sugar": 95,
+  "icd_10_codes": ["E11.9", "I10"],
+  "notes": "Patient has a family history of diabetes and hypertension.",
+  "last_appointment_id": 456
+}

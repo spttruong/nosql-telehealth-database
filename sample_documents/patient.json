@@ -1,0 +1,22 @@
+{
+  "_id": "patient123",
+  "patient_chart": {
+    "height_in": 68,
+    "weight": 150,
+    "blood_pressure": "120/80",
+    "blood_sugar": 95,
+    "icd_10_codes": ["E11.9", "I10"],
+    "notes": "Patient has a family history of diabetes and hypertension.",
+    "last_appointment_id": 456
+  },
+  "name": "John Smith",
+  "date_of_birth": ISODate("1985-05-06"),
+  "address": "123 Main St, Anytown, USA",
+  "primary_phone": ["555-123-4567", "555-987-6543"],
+  "email": "john.smith@example.com",
+  "medical_group": "Anytown Medical Group",
+  "insurance_id": "1234567890",
+  "insurance_payer_id": "987654321",
+  "languages": ["English", "Spanish"],
+  "appointments": [456, 789, 123]
+}

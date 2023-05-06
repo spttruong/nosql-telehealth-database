@@ -1,0 +1,12 @@
+{
+  "_id": "provider123",
+  "npi": "ABC123",
+  "name": "Dr. John Doe",
+  "date_employed": ISODate("2020-01-01T00:00:00Z"),
+  "date_of_birth": ISODate("1980-01-01T00:00:00Z"),
+  "email": "john.doe@example.com",
+  "primary_phone": "555-123-4567",
+  "credentialed_skills": ["pediatrics", "family medicine"],
+  "appointments": ["appointment456", "appointment789"],
+  "last_appointment": "appointment789"
+}
