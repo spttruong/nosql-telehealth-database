@@ -27,17 +27,29 @@ There are 4 types of documents within the database:
 3. `provider`
 4. `appointment`
 
+### Document Relationship Diagram 
+
+It may first be useful to visualize the document relationships similar to how we visualize entities in a relational database:
+
+![image](https://user-images.githubusercontent.com/49035567/236638151-42ae8a73-2eb8-4506-8e5e-e2e907c3255a.png)
+
 * Each `patient` has exactly one `patient_chart` that holds their medical data (one-to-one relationship) and vice versa. Each `patient_chart` holds the health data of exactly one `patient`.
 * One `patient` may have a record of multiple `appointments` within their medical history (one-to-many relationship).
 * Each `appointment` can be linked to one and only one `patient` as well as one and only one `provider`.
 * One `provider` can conduct multiple `appointments` (one-to-many relationship).
 * Multiple `appointments` can be linked to a single `patient_chart` (many-to-one relationship).
 
-Here is an document relationship diagram to better visualize the data. 
+However, document relationships are a little different from relational database entity relationships as described in section, Data Model Design. Here is a more accurate way to view the document relationships:
 
-It may first be useful to visualize the document relationships
+![image](https://user-images.githubusercontent.com/49035567/236638353-213fdb4d-07a0-49e1-b40e-f6128eb7fc22.png)
 
-While extremely similar to the traditional entity relationship diagram used to describe SQL databases, this diagram is slightly different in that the lines connecting each document also states whether or not the document(s) have an embedded relationship or a reference type of relationship.
+* The `patient_chart` document is embedded within the `patient` document; in other words althought it is its own document, it is a part of the `patient` document
+* The rest of the documents are related to one another via a referencing an `id` field
+
+Here is the diagram with both relationships overlayed for perhaps a more holistic view of the database:
+
+![image](https://user-images.githubusercontent.com/49035567/236638404-d8eb4258-f704-445c-bfe0-792ca026a578.png)
+
 
 
 
