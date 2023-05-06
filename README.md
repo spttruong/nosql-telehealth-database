@@ -20,5 +20,24 @@ In the normalized data model, documents contain **references**, usually in the f
 
 ## Document Collections
 
+There are 4 types of documents within the database:
+
+1. `patient`
+2. `patient_chart`
+3. `provider`
+4. `appointment`
+
+* Each `patient` has exactly one `patient_chart` that holds their medical data (one-to-one relationship) and vice versa. Each `patient_chart` holds the health data of exactly one `patient`.
+* One `patient` may have a record of multiple `appointments` within their medical history (one-to-many relationship).
+* Each `appointment` can be linked to one and only one `patient` as well as one and only one `provider`.
+* One `provider` can conduct multiple `appointments` (one-to-many relationship).
+* Multiple `appointments` can be linked to a single `patient_chart` (many-to-one relationship).
+
+Here is an document relationship diagram to better visualize the data. 
+
+It may first be useful to visualize the document relationships
+
+While extremely similar to the traditional entity relationship diagram used to describe SQL databases, this diagram is slightly different in that the lines connecting each document also states whether or not the document(s) have an embedded relationship or a reference type of relationship.
+
 
 
