@@ -31,7 +31,7 @@ There are 4 types of documents within the database:
 
 It may first be useful to visualize the document relationships similar to how we visualize entities in a relational database:
 
-![image](https://user-images.githubusercontent.com/49035567/236638151-42ae8a73-2eb8-4506-8e5e-e2e907c3255a.png)
+![image](https://user-images.githubusercontent.com/49035567/236642825-e28b7092-8600-4554-924f-85e706de47ce.png)
 
 * Each `patient` has exactly one `patient_chart` that holds their medical data (one-to-one relationship) and vice versa. Each `patient_chart` holds the health data of exactly one `patient`.
 * One `patient` may have a record of multiple `appointments` within their medical history (one-to-many relationship).
@@ -41,14 +41,14 @@ It may first be useful to visualize the document relationships similar to how we
 
 However, document relationships are a little different from relational database entity relationships as described in section, Data Model Design. Here is a more accurate way to view the document relationships:
 
-![image](https://user-images.githubusercontent.com/49035567/236640593-086c15be-670d-4023-81f1-ed9fd43fa3b1.png)
+![image](https://user-images.githubusercontent.com/49035567/236642813-e95fc80e-4172-4ac2-aa00-7c0ddcf6e41b.png)
 
 * The `patient_chart` document is embedded within the `patient` document; in other words althought it is its own document, it is a part of the `patient` document
 * The rest of the documents are related to one another via a referencing an `id` field
 
-Here is the diagram with both relationships overlayed for perhaps a more holistic view of the database:
+Here is the diagram with both relationships types overlayed for provide a more holistic view of the database:
 
-![image](https://user-images.githubusercontent.com/49035567/236640569-61fbba8d-f808-4ebf-8070-6cc73d72df1e.png)
+![image](https://user-images.githubusercontent.com/49035567/236642758-63888b7d-0824-4a97-ae77-8f051dddf4ff.png)
 
 These diagrams were created using [Lucid.app](lucid.app).
 
