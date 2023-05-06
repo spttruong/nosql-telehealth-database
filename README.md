@@ -41,15 +41,14 @@ It may first be useful to visualize the document relationships similar to how we
 
 However, document relationships are a little different from relational database entity relationships as described in section, Data Model Design. Here is a more accurate way to view the document relationships:
 
-![image](https://user-images.githubusercontent.com/49035567/236638353-213fdb4d-07a0-49e1-b40e-f6128eb7fc22.png)
+![image](https://user-images.githubusercontent.com/49035567/236640593-086c15be-670d-4023-81f1-ed9fd43fa3b1.png)
 
 * The `patient_chart` document is embedded within the `patient` document; in other words althought it is its own document, it is a part of the `patient` document
 * The rest of the documents are related to one another via a referencing an `id` field
 
 Here is the diagram with both relationships overlayed for perhaps a more holistic view of the database:
 
-![image](https://user-images.githubusercontent.com/49035567/236638404-d8eb4258-f704-445c-bfe0-792ca026a578.png)
+![image](https://user-images.githubusercontent.com/49035567/236640569-61fbba8d-f808-4ebf-8070-6cc73d72df1e.png)
 
-
-
+These diagrams were created using [Lucid.app](lucid.app).
 
