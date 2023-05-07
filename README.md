@@ -254,4 +254,12 @@ Result:
 
 ### Database Growth
 
+From an end-user perspective, there would be some kind of front-end UI resembling a series of nested forms for providers, schedulers, administrators, and patients to view their data. Using that same UI, patients can edit their personal information, providers can conduct appointments and edit patient charts, and schedulers can modify appointment details.
 
+The application would likely use MQL or some kind of API to create, read, update, and delete data. Here are some instances of scaling the database:
+
+* new patients being entered into the `patients` collection by an administrator
+* new providers are hired and provided user accounts begin conducting health appointments
+* the number of appointments will continue to increase, and with each appointment conducted, the arrays `patient.appointments` and `provider.appointments` will continue to grow as to maintain appointment history
+* `patient.patient_chart` can expand to contain more health information to accomodate needs of the company or patient (e.g., cholesterol level, blood type, allergies, immunizations)
+* likewise, any of the other document types can have fields added to expand the amount of data collected
