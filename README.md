@@ -1,5 +1,7 @@
 # NoSQL Telehealth Database
 
+Link to YouTube video presentation: https://youtu.be/p-Ej4BUl7Fc
+
 ## Business Case Overview
 
 Suppose a healthcare business required a telehealth platform to conduct remote annual wellness visits. Their business model relies on an application that allows for the scheduling, administering, and tracking of patient and appointment data. Patients receive medical expertise from licensed medical providers who are also on the platform. The company tracks and confirms completed appointments through the application and use the appointment dispositions to bill medical groups regarding the completion of these appointments.
