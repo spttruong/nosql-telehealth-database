@@ -112,4 +112,14 @@ Once created, import the the corresponding JSON files from `output/` to the appr
 
 <img width="574" alt="image" src="https://user-images.githubusercontent.com/49035567/236657227-d67c58fa-0ff0-44aa-b709-9da341d1fb4c.png">
 
+Here is an example of the `patients` collection post-import. The second document has the embedded `patient_chart` document expanded.
 
+<img width="760" alt="image" src="https://user-images.githubusercontent.com/49035567/236657892-9e78194b-7470-4c16-b260-c3dc1ce9a02a.png">
+
+`providers` collection:
+
+<img width="757" alt="image" src="https://user-images.githubusercontent.com/49035567/236657854-735aef23-3481-4839-9286-9e4d26e05945.png">
+
+`appointments` collection:
+
+<img width="758" alt="image" src="https://user-images.githubusercontent.com/49035567/236658174-4c3b2cd6-6afa-4ad0-9306-5e5a6d5da6e9.png">
