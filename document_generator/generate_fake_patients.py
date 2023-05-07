@@ -20,7 +20,7 @@ for i in range(50):
         "name": fake.name(),
         "date_of_birth": fake.date_of_birth(minimum_age=18, maximum_age=80),
         "address": fake.address(),
-        "primary_phone": [str(fake.random_number(digits=10))],
+        "primary_phone": str(fake.random_number(digits=10)),
         "email": fake.email(),
         "medical_group": fake.company(),
         "insurance_id": fake.random_number(digits=12),
