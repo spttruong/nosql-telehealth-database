@@ -108,4 +108,8 @@ Proceed to create collections for the other document types as well.
 
 <img width="570" alt="image" src="https://user-images.githubusercontent.com/49035567/236651787-42ab3398-23bd-4909-8a4e-c7c252065645.png">
 
+Once created, import the the corresponding JSON files from `output/` to the appropriate collections.
+
+<img width="574" alt="image" src="https://user-images.githubusercontent.com/49035567/236657227-d67c58fa-0ff0-44aa-b709-9da341d1fb4c.png">
+
 
